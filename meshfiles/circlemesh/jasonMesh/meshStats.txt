@@ -1,0 +1,25 @@
+
+you have provided mode, D, D1_D and Imax
+mode=0,  D=2.8280e-01,  D1_D=1.0000e+03,  Imax=600  
+Jmax would be computed such that all quadrilaterals are square 
+between inner radius 0.141400 and outer radius 141.400000 
+
+Jmax found to be 663 
+
+Imax=600 Jmax=663 
+
+Initializing default mesh in single block 
+
+generating 1D mesh 
+
+generating 2D mesh 
+
+Imposing symmetry in 2D mesh 
+
+Writing plot3D file 
+1 block(s)
+600 663 2
+Writing tecplot file 
+Writing mesh file for input to conflu 
+
+ nCells = 396538    nVerts = 397137    nBounds = 2

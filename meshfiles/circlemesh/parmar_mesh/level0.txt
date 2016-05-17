@@ -1,0 +1,26 @@
+runcode_circle 0 2 100 601 | tee level0.txt
+
+you have provided mode, D, D1_D and Imax
+mode=0,  D=2.0000e+00,  D1_D=1.0000e+02,  Imax=601  
+Jmax would be computed such that all quadrilaterals are square 
+between inner radius 1.000000 and outer radius 100.000000 
+
+Jmax found to be 443 
+
+Imax=601 Jmax=443 
+
+Initializing default mesh in single block 
+
+generating 1D mesh 
+
+generating 2D mesh 
+
+Imposing symmetry in 2D mesh 
+
+Writing plot3D file 
+1 block(s)
+601 443 2
+Writing tecplot file 
+Writing mesh file for input to conflu 
+
+ nCells = 265200    nVerts = 265800    nBounds = 2
