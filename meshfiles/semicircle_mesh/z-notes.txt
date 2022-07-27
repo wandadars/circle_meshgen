@@ -1,0 +1,25 @@
+This grid is generated to try and create a structured grid between two diameter circles of diameter 1m and 5m. The number of points in the radial direction is 80, and the number of points in the transverse direction is 160.
+
+
+To generate the mesh first use:
+ ./../../semicircle_meshgen 1 1 5       
+
+This puts mode=1, which allows for manual specification of the number of radial and tangential points), and sets the inner diamter to 1 and the ratio of the inner/outer diameters to 5.
+
+The rest of the inputs have to be manually input on the command line, so provide the following when prompted: 
+160 80 1     (The 1 is the stetching factor, which we don't want stretching here so it's set to unity)
+
+The commands to create a .vog file from the output are:
+
+mv grid.x  grid.grd
+plot3d2vog -m grid
+vogcheck grid.vog
+extract -vtk grid 0 volumeRatio
+
+
+
+**To rotate the grid as was needed for a Loci-Stream run, use the following to rotate it 90 degrees around the z-axis.
+vogmerge -g grid.vog -o grid_rotated.vog -zrotate 90
+
+
+
